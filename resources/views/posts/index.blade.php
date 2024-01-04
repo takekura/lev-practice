@@ -9,9 +9,12 @@
      <h1>Blog Name</h1>
      <div class = "posts">
        @foreach ($posts as $post)
-         <h2 class = "title">{{$post -> title}}</h2>
-         <p class = "body">{{$post -> body}}</p>
+         <h2 class='title'>{{ $post->title }}</h2>
+         <p class='body'>{{ $post->body }}</p>
        @endforeach
+     </div>
+     <div class = "paginate">
+         {{ $posts->links() }}
      </div>
   </body>
 </html>

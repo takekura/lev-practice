@@ -17,6 +17,7 @@
      </div>
      <div class = "paginate">
          {{ $posts->links() }}
+         <a href = "/posts/create">create</a>
      </div>
   </body>
 </html>
